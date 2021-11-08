@@ -33,13 +33,19 @@ function append(data){
 
         let img = document.createElement("img");
 
+        let mrp = +(dish.idCategory) * 100
+
+        let price = document.createElement("p");
+
+        price.textContent = `price : ${mrp}`
+
         let name = document.createElement("p")
 
          name.textContent = dish.strCategory;
 
         img.src = dish.strCategoryThumb;
 
-        dish_div.append(img);
+        dish_div.append(img,name,price);
 
         dish_container.append(dish_div)
     });
