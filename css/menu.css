@@ -38,29 +38,19 @@ nav li{
     list-style: none;
 }
 
-/* login container started */
 
-#loginDiv{
-    width: 30%;
-    margin: 10vh auto;
-    border: 2p solid palevioletred;
+/* dish_container started */
+
+#dish_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
 }
 
-#loginDiv input{
-    width: 100%;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: 1vh 0px;
-    margin-top: 1vh;
+#dish_container div{
+    border: 1px solid black;
 }
 
-#loginDiv button{
+#dish_container div image{
     width: 100%;
-    padding: 2vh 0px;
-    margin-top: 3vh;
-    background-color: palevioletred;
-    color: white;
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
 }

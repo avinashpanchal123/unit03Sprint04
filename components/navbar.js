@@ -9,7 +9,9 @@ function navbar(){
     <div id="right_nav">
         <li><a href="login.html">Login</a></li>
         <li><a href="signup.html">Sign Up</a></li>
-    </div>`
+    </div>
+    </nav>
+    `
 }
 
 export default navbar

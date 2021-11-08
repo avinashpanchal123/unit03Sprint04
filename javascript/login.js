@@ -1,3 +1,10 @@
+import navbar from "../components/navbar.js";
+
+let nav_div = document.getElementById("nav_div");
+
+nav_div.innerHTML = navbar()
+
+
 function login(e) {
 
     e.preventDefault()

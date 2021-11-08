@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/signUp.css">
 </head>
 
 <body>
+    <div id="nav_div">
+      
+       
+    </div>
     <div id="signUp_div">
         <form onsubmit="signUp(event)" action="" id="signUp_form">
             <input id="name" type="text" placeholder="name">
@@ -23,60 +28,7 @@
 </body>
 
 </html>
-<script>
+<script type="module" src="../javascript/signUp.js">
 
-    function signUp(e) {
-
-        e.preventDefault()
-        let form = document.getElementById("signUp_form");
-
-        let userData = {
-            name: form.name.value,
-            email: form.email.value,
-            password: form.password.value,
-            username: form.username.value,
-            mobile: form.mobile.value,
-            description: form.description.value
-        }
-
-        userData = JSON.stringify(userData)
-
-        console.log(userData);
-
-        fetch(`https://masai-api-mocker.herokuapp.com/auth/register`, {
-
-            method: "POST",
-
-            body: userData,
-
-            headers: {
-                "Content-Type": "application/json",
-            }
-
-
-        })
-
-            .then((res) => {
-                return res.json()
-            })
-            .then((res) => {
-                console.log(res);
-                if (res.error == false) {
-                    alert(res.message);
-
-                    let timer = setTimeout(() => {
-                        gotoLoginPage() 
-                    }, 2000)
-                }
-            })
-            .catch((e) => {
-                console.log(e);
-                alert("Registration failed, user already exists")
-            })
-
-    }
-
-    function gotoLoginPage() {
-      window.location.href = "login.html"
-    }
+  
 </script>
