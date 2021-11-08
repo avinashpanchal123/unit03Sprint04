@@ -39,13 +39,17 @@ function append(data){
 
         price.textContent = `price : ${mrp}`
 
+        let btn = document.createElement("button")
+
+        btn.textContent = "Add to cart"
+
         let name = document.createElement("p")
 
          name.textContent = dish.strCategory;
 
         img.src = dish.strCategoryThumb;
 
-        dish_div.append(img,name,price);
+        dish_div.append(img,name,price ,btn);
 
         dish_container.append(dish_div)
     });
