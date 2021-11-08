@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#loginDiv{
+    width: 30%;
+    margin: 10vh auto;
+    border: 2p solid palevioletred;
+}
+
+#loginDiv input{
+    width: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 1vh 0px;
+    margin-top: 1vh;
+}
+
+#loginDiv button{
+    width: 100%;
+    padding: 2vh 0px;
+    margin-top: 3vh;
+    background-color: palevioletred;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}

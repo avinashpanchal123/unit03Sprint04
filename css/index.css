@@ -1,0 +1,31 @@
+nav{
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 8vh;
+}
+
+#left_nav{
+    width: 15%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+#right_nav{
+    position: absolute;
+    width: 15%;
+    right: 3%;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    list-style: none;
+}
