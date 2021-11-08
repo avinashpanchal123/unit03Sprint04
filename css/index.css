@@ -29,3 +29,18 @@ li a{
 nav li{
     list-style: none;
 }
+
+
+
+/* dish style */
+
+#dish_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+#dish_container div image{
+    width: 100%;
+}
